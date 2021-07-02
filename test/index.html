@@ -6,8 +6,8 @@
 	<title>Trang chủ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Latest compiled and minified CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="../lib/bootrap4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="../lib/bootrap4/css/bootstrap.min.css"> -->
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -15,266 +15,1105 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-	<script src="../lib/bootrap4/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- <script src="../lib/bootrap4/js/bootstrap.min.js"></script> -->
 </head>
 <body>
-	<!-- .container: fixed container
-		.container-fluid: full width container -->
+	<!-- .container: fixed container -->
+	<!-- .container-fluid: full width container -->
 
 
-		<!-- bs4 grid basic -->
-		<div class="row">
-			<div class="col" style="background-color: lavender;">Hello</div>
-			<div class="col" style="background-color: orange;">World</div>
-			<div class="col" style="background-color: lavender;">I'm Lam</div>
+	<!-- bs4 grid basic -->
+	<div class="row">
+		<div class="col" style="background-color: lavender;">Hello</div>
+		<div class="col" style="background-color: orange;">World</div>
+		<div class="col" style="background-color: lavender;">I'm Lam</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3" style="background-color: lavender;">Hello</div>
+		<div class="col-sm-3" style="background-color: orange;">World</div>
+		<div class="col-sm-3" style="background-color: powderblue;">I'm <mark>Grela</mark></div>
+		<div class="col-sm-3" style="background-color: pink;">And u</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-4" style="background-color: lavender;">My College</div>
+		<div class="col-sm-8" style="background-color: orange;"><abbr>Academy of Cryptography Technique</abbr></div>
+	</div>
+	<br><br><br>
+
+
+	<!-- bs4 typography and text color-->
+	<p>Use <kbd>Ctrl + Shitf + F</kbd> to format code in Sublime Txet 3</p>
+	<p class="text-muted">This text is muted.</p><!-- <a href="#" class="text-muted">Muted link.</a> -->
+	<p class="text-primary">This text is important.</p><!-- <h2 class="text-primary">Hello</h2> -->
+	<p class="text-success">This text indicates success.</p>
+	<p class="text-info">This text represents some information.</p>
+	<p class="text-warning">This text represents a warning.</p>
+	<p class="text-danger">This text represents danger.</p>
+	<p class="text-secondary">Secondary text.</p>
+	<p class="text-dark">This text is dark grey.</p>
+	<p class="text-body">Default body color (often black).</p>
+	<p class="text-light">This text is light grey (on white background).</p>
+	<p class="text-white">This text is white (on white background).</p>
+	<p class="text-black-50">Black text with 50% opacity on white background</p>
+	<p class="text-white bg-dark">White text on black background</p>
+
+
+	<!--bs4 background-color and text color -->
+	<p class="bg-primary text-white">This text is important.</p>
+	<p class="bg-success text-white">This text indicates success.</p>
+	<p class="bg-info text-white">This text represents some information.</p>
+	<p class="bg-warning text-white">This text represents a warning.</p>
+	<p class="bg-danger text-white">This text represents danger.</p>
+	<p class="bg-secondary text-white">Secondary background color.</p>
+	<p class="bg-dark text-white">Dark grey background color.</p>
+	<p class="bg-light text-dark">Light grey background color.</p>
+	<br><br><br>
+
+
+	<!-- bs4 table -->
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-hover table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-dark table-hover">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Default</td>
+				<td>Defaultson</td>
+				<td>def@somemail.com</td>
+			</tr>      
+			<tr class="table-primary">
+				<td>Primary</td>
+				<td>Joe</td>
+				<td>joe@example.com</td>
+			</tr>
+			<tr class="table-success">
+				<td>Success</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr class="table-danger">
+				<td>Danger</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr class="table-info">
+				<td>Info</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+			<tr class="table-warning">
+				<td>Warning</td>
+				<td>Refs</td>
+				<td>bo@example.com</td>
+			</tr>
+			<tr class="table-active">
+				<td>Active</td>
+				<td>Activeson</td>
+				<td>act@example.com</td>
+			</tr>
+			<tr class="table-secondary">
+				<td>Secondary</td>
+				<td>Secondson</td>
+				<td>sec@example.com</td>
+			</tr>
+			<tr class="table-light">
+				<td>Light</td>
+				<td>Angie</td>
+				<td>angie@example.com</td>
+			</tr>
+			<tr class="table-dark text-dark">
+				<td>Dark</td>
+				<td>Bo</td>
+				<td>bo@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table">
+		<thead class="thead-dark"><!-- thead-light -->
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>john@example.com</td>
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>mary@example.com</td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>july@example.com</td>
+			</tr>
+		</tbody>
+	</table>
+	<br><br><br>
+
+
+	<!-- bs4 images -->
+	<img src="../../images/IMG_0.jpg" class="rounded" alt="Cinque Terre" width="304" height="335"> 
+	<img src="../../images/IMG_1.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="304">
+	<img src="../../images/IMG_3.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="335"> 
+	<img src="../../images/IMG_2.jpg" class="float-right" alt="Cinque Terre" width="304" height="335"> 
+	<img src="../../images/IMG_4.jpg" class="img-fluid" alt="Cinque Terre" width="304" height="335">
+	<br><br><br>
+
+
+	<!-- bs4 jumbotron -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Bootstrap Tutorial</h1>
+			<p>Bootstrap is most popular HTML, CSS, ..</p>
+		</div>	
+	</div>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1>Bootstrap Tutorial</h1>
+			<p>Bootstrap is the most popular HTML, CSS...</p>
+		</div>
+	</div>
+	<br><br><br>
+
+
+	<!-- bs4 alert -->
+	<div class="container">
+		<h2>Alerts</h2>
+		<p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+		<div class="alert alert-success">
+			<strong>Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+		<div class="alert alert-info">
+			<strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+		</div>
+		<div class="alert alert-warning">
+			<strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+		</div>
+		<div class="alert alert-danger">
+			<strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+		</div>
+		<div class="alert alert-primary">
+			<strong>Primary!</strong> Indicates an important action.
+		</div>
+		<div class="alert alert-secondary">
+			<strong>Secondary!</strong> Indicates a slightly less important action.
+		</div>
+		<div class="alert alert-dark">
+			<strong>Dark!</strong> Dark grey alert.
+		</div>
+		<div class="alert alert-light">
+			<strong>Light!</strong> Light grey alert.
+		</div>
+
+		<!-- closing alert -->
+		<div class="alert alert-success alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+		<div class="alert alert-success alert-dismissible fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+	</div>
+	<br><br>
+
+
+
+	<!-- bs4 buttons -->
+	<div class="container">
+		<h2>Button Styles</h2>
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-secondary">Secondary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-dark">Dark</button>
+		<button type="button" class="btn btn-light">Light</button>
+		<button type="button" class="btn btn-link">Link</button>  
+		<h2>Button Elements</h2>
+		<a href="#" class="btn btn-info" role="button">Link Button</a>
+		<button type="button" class="btn btn-info">Button</button>
+		<input type="button" class="btn btn-info" value="Input Button">
+		<input type="submit" class="btn btn-info" value="Submit Button">
+		<h2>Button Outline</h2>
+		<button type="button" class="btn btn-outline-primary">Primary</button>
+		<button type="button" class="btn btn-outline-secondary">Secondary</button>
+		<button type="button" class="btn btn-outline-success">Success</button>
+		<button type="button" class="btn btn-outline-info">Info</button>
+		<button type="button" class="btn btn-outline-warning">Warning</button>
+		<button type="button" class="btn btn-outline-danger">Danger</button>
+		<button type="button" class="btn btn-outline-dark">Dark</button>
+		<button type="button" class="btn btn-outline-light text-dark">Light</button>
+		<h2>Button Sizes</h2>
+		<button type="button" class="btn btn-primary btn-lg">Large</button>
+		<button type="button" class="btn btn-primary btn-md">Default</button>    
+		<button type="button" class="btn btn-primary btn-sm">Small</button>
+		<h2>Block Level Buttons</h2>
+		<button type="button" class="btn btn-primary btn-block">Button 1</button>
+		<button type="button" class="btn btn-success btn-block">Button 2</button>
+		<h2>Button States</h2>
+		<button type="button" class="btn btn-primary">Primary Button</button>
+		<button type="button" class="btn btn-primary active">Active Primary</button>
+		<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+		<a href="#" class="btn btn-primary disabled">Disabled Link</a>
+		<h2>Spinner Buttons</h2>
+		<p>Add spinners to buttons:</p>
+
+		<button class="btn btn-primary">
+			<span class="spinner-border spinner-border-lg"></span>
+		</button>
+
+		<button class="btn btn-primary">
+			<span class="spinner-border spinner-border-sm"></span>
+			Loading..
+		</button>
+
+		<button class="btn btn-primary" disabled>
+			<span class="spinner-border spinner-border-sm"></span>
+			Loading..
+		</button>
+
+		<button class="btn btn-primary" disabled>
+			<span class="spinner-grow spinner-grow-sm"></span>
+			Loading..
+		</button>
+	</div>
+	<br><br><br>
+
+
+
+	<!-- bs4 button groups -->
+	<div class="container">
+		<h2>Button Group</h2>
+		<h3>Large Buttons:</h3>
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<button type="button" class="btn btn-primary">Sony</button>
+		</div>
+		<h3>Default Buttons:</h3>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<button type="button" class="btn btn-primary">Sony</button>
+		</div>
+		<h3>Small Buttons:</h3>
+		<div class="btn-group btn-group-sm">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<button type="button" class="btn btn-primary">Sony</button>
+		</div>
+		<h3>Vertical buttons:</h3>
+		<div class="btn-group-vertical">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<button type="button" class="btn btn-primary">Sony</button>
+		</div>
+		<h2>Nesting Button Groups</h2>
+		<p>Nest button groups to create dropdown menus:</p>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Sony
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Tablet</a>
+					<a class="dropdown-item" href="#">Smartphone</a>
+				</div>
+			</div>
+		</div>
+		<h2>Split Buttons</h2>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Sony</button>
+			<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Tablet</a>
+				<a class="dropdown-item" href="#">Smartphone</a>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+
+
+
+	<!-- bs4 badges -->
+	<div class="container">
+		<h2>Badges</h2>
+		<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+		<h2>Contextual Badges</h2>
+		<span class="badge badge-primary">Primary</span>
+		<span class="badge badge-secondary">Secondary</span>
+		<span class="badge badge-success">Success</span>
+		<span class="badge badge-danger">Danger</span>
+		<span class="badge badge-warning">Warning</span>
+		<span class="badge badge-info">Info</span>
+		<span class="badge badge-light">Light</span>
+		<span class="badge badge-dark">Dark</span>
+		<span class="badge badge-pill badge-primary">Primary</span>
+		<span class="badge badge-pill badge-secondary">Secondary</span>
+		<span class="badge badge-pill badge-success">Success</span>
+		<span class="badge badge-pill badge-danger">Danger</span>
+		<span class="badge badge-pill badge-warning">Warning</span>
+		<span class="badge badge-pill badge-info">Info</span>
+		<span class="badge badge-pill badge-light">Light</span>
+		<span class="badge badge-pill badge-dark">Dark</span>
+		<br>
+		<button type="button" class="btn btn-primary">
+			Messages <span class="badge badge-light">4</span>
+		</button>
+	</div>
+	<br><br><br>
+
+
+
+	<!-- bs4 progress bars -->
+	<div class="container">
+		<h2>Basic Progress Bar</h2>
+		<p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+		<div class="progress">
+			<div class="progress-bar" style="width:70%"></div>
 		</div>
 		<br>
-		<div class="row">
-			<div class="col-sm-3" style="background-color: lavender;">Hello</div>
-			<div class="col-sm-3" style="background-color: orange;">World</div>
-			<div class="col-sm-3" style="background-color: powderblue;">I'm <mark>Grela</mark></div>
-			<div class="col-sm-3" style="background-color: pink;">And u</div>
+		<div class="progress" style="height:20px">
+			<div class="progress-bar" style="width:60%;height:20px"></div>
 		</div>
 		<br>
-		<div class="row">
-			<div class="col-sm-4" style="background-color: lavender;">My College</div>
-			<div class="col-sm-8" style="background-color: orange;"><abbr>Academy of Cryptography Technique</abbr></div>
+		<div class="progress" style="height:30px">
+			<div class="progress-bar" style="width:50%;height:30px">50%</div>
+		</div>
+		<h2>Colored Progress Bars</h2>
+		<p>Use any of the contextual color classes to change the color of the progress bar:</p> 
+		<!-- Blue -->
+		<div class="progress">
+			<div class="progress-bar" style="width:10%"></div>
+		</div><br>
+
+		<!-- Green -->
+		<div class="progress">
+			<div class="progress-bar bg-success" style="width:20%"></div>
+		</div><br>
+
+		<!-- Turquoise -->
+		<div class="progress">
+			<div class="progress-bar bg-info" style="width:30%"></div>
+		</div><br>
+
+		<!-- Orange -->
+		<div class="progress">
+			<div class="progress-bar bg-warning" style="width:40%"></div>
+		</div><br>
+
+		<!-- Red -->
+		<div class="progress">
+			<div class="progress-bar bg-danger" style="width:50%"></div>
+		</div><br>
+
+		<!-- White -->
+		<div class="progress border">
+			<div class="progress-bar bg-white" style="width:60%"></div>
+		</div><br>
+
+		<!-- Grey -->
+		<div class="progress">
+			<div class="progress-bar bg-secondary" style="width:70%"></div>
+		</div><br>
+
+		<!-- Light Grey -->
+		<div class="progress border">
+			<div class="progress-bar bg-light" style="width:80%"></div>
+		</div><br>
+
+		<!-- Dark Grey -->
+		<div class="progress">
+			<div class="progress-bar bg-dark" style="width:90%"></div>
+		</div>
+		<h2>Striped Progress Bars</h2>
+		<p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped" style="width:30%"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
+		</div>
+		<h2>Animated Progress Bar</h2>
+		<p>Add the .progress-bar-animated class to animate the progress bar:</p> 
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+		</div>
+		<h2>Multiple Progress Bars</h2>
+		<p>Create a stacked progress bar by placing multiple bars into the same div with class="progress":</p> 
+		<div class="progress">
+			<div class="progress-bar bg-success" style="width:40%">
+				Free Space
+			</div>
+			<div class="progress-bar bg-warning" style="width:10%">
+				Warning
+			</div>
+			<div class="progress-bar bg-danger" style="width:20%">
+				Danger
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+
+
+
+	<!-- bs4 spinners -->
+	<div class="container">
+		<h2>Spinners</h2>
+		<p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+		<div class="spinner-border"></div>
+		<div class="spinner-border text-muted"></div>
+		<div class="spinner-border text-primary"></div>
+		<div class="spinner-border text-success"></div>
+		<div class="spinner-border text-info"></div>
+		<div class="spinner-border text-warning"></div>
+		<div class="spinner-border text-danger"></div>
+		<div class="spinner-border text-secondary"></div>
+		<div class="spinner-border text-dark"></div>
+		<div class="spinner-border text-light"></div>
+		<h2>Growing Spinners</h2>
+		<p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
+
+		<div class="spinner-grow text-muted"></div>
+		<div class="spinner-grow text-primary"></div>
+		<div class="spinner-grow text-success"></div>
+		<div class="spinner-grow text-info"></div>
+		<div class="spinner-grow text-warning"></div>
+		<div class="spinner-grow text-danger"></div>
+		<div class="spinner-grow text-secondary"></div>
+		<div class="spinner-grow text-dark"></div>
+		<div class="spinner-grow text-light"></div>
+	</div>
+	<br><br><br>
+
+
+
+	<!-- bs4 pagination -->
+	<div class="container">
+		<h2>Pagination</h2>
+		<p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>                  
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+		<h3>Active pagination</h3>
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+		<h3>Disabled pagination</h3>
+		<ul class="pagination">
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+		<h3>Pagination sizes</h3>
+		<ul class="pagination pagination-lg">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+		<h3>Pagination</h3>
+		<p>Use utilitiy classes to change the alignment of the pagination:</p>                  
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+		<ul class="pagination justify-content-center">
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+		<ul class="pagination justify-content-end">
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+
+
+
+	<!-- bs4 list groups -->
+	<div class="container">
+		<h2>Basic List Group</h2>
+		<ul class="list-group">
+			<li class="list-group-item">First item</li>
+			<li class="list-group-item">Second item</li>
+			<li class="list-group-item">Third item</li>
+		</ul>
+		<h2>Active Item in a List Group</h2>
+		<ul class="list-group">
+			<li class="list-group-item active">Active item</li>
+			<li class="list-group-item">Second item</li>
+			<li class="list-group-item">Third item</li>
+		</ul>
+		<h2>List Group With Linked Items</h2>
+		<div class="list-group">
+			<a href="#" class="list-group-item list-group-item-action">First item</a>
+			<a href="#" class="list-group-item list-group-item-action">Second item</a>
+			<a href="#" class="list-group-item list-group-item-action">Third item</a>
+		</div>
+		<h3>List Group With Disable Items</h3>
+		<div class="list-group">
+			<a href="#" class="list-group-item disabled">Disabled item</a>
+			<a href="#" class="list-group-item disabled">Disabled item</a>
+			<a href="#" class="list-group-item">Third item</a>
+		</div>
+		<h2>Horizontal List Groups</h2>
+		<p>The .list-group-horizontal class displays the list items horizontally instead of vertically:</p>
+		<ul class="list-group list-group-horizontal">
+			<li class="list-group-item">First item</li>
+			<li class="list-group-item">Second item</li>
+			<li class="list-group-item">Third item</li>
+			<li class="list-group-item">Fourth item</li>
+		</ul>
+		<h2>List Group With Contextual Classes</h2>
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-success">Success item</li>
+			<li class="list-group-item list-group-item-secondary">Secondary item</li>
+			<li class="list-group-item list-group-item-info">Info item</li>
+			<li class="list-group-item list-group-item-warning">Warning item</li>
+			<li class="list-group-item list-group-item-danger">Danger item</li>
+			<li class="list-group-item list-group-item-primary">Primary item</li>
+			<li class="list-group-item list-group-item-dark">Dark item</li>
+			<li class="list-group-item list-group-item-light">Light item</li>
+		</ul>
+		<br>
+		<div class="list-group">
+			<a href="#" class="list-group-item list-group-item-action">Action item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+			<a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+		</div>
+		<br>
+		<ul class="list-group">
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Inbox
+				<span class="badge badge-primary badge-pill">12</span>
+			</li>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Ads
+				<span class="badge badge-primary badge-pill">50</span>
+			</li>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				Junk
+				<span class="badge badge-primary badge-pill">99</span>
+			</li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+
+
+
+	<!-- bs4 cards -->
+	<div class="container">
+		<h2>Card Image</h2>
+		<p>Image at the top (card-img-top):</p>
+		<div class="card" style="width:400px">
+			<img class="card-img-top" src="../../images/IMG_4.jpg" alt="Card image" style="width:100%">
+			<div class="card-body">
+				<h4 class="card-title">John Doe</h4>
+				<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+				<a href="#" class="btn btn-primary">See Profile</a>
+			</div>
 		</div>
 		<br>
 
-
-		<!-- bs4 typography and text color-->
-		<p>Use <kbd>Ctrl + Shitf + F</kbd> to format code in Sublime Txet 3</p>
-		<p class="text-muted">This text is muted.</p><!-- <a href="#" class="text-muted">Muted link.</a> -->
-		<p class="text-primary">This text is important.</p><!-- <h2 class="text-primary">Hello</h2> -->
-		<p class="text-success">This text indicates success.</p>
-		<p class="text-info">This text represents some information.</p>
-		<p class="text-warning">This text represents a warning.</p>
-		<p class="text-danger">This text represents danger.</p>
-		<p class="text-secondary">Secondary text.</p>
-		<p class="text-dark">This text is dark grey.</p>
-		<p class="text-body">Default body color (often black).</p>
-		<p class="text-light">This text is light grey (on white background).</p>
-		<p class="text-white">This text is white (on white background).</p>
-		<p class="text-black-50">Black text with 50% opacity on white background</p>
-		<p class="text-white bg-dark">White text on black background</p>
-
-
-		<!--bs4 background-color and text color -->
-		<p class="bg-primary text-white">This text is important.</p>
-		<p class="bg-success text-white">This text indicates success.</p>
-		<p class="bg-info text-white">This text represents some information.</p>
-		<p class="bg-warning text-white">This text represents a warning.</p>
-		<p class="bg-danger text-white">This text represents danger.</p>
-		<p class="bg-secondary text-white">Secondary background color.</p>
-		<p class="bg-dark text-white">Dark grey background color.</p>
-		<p class="bg-light text-dark">Light grey background color.</p>
-
-
-		<!-- bs4 table -->
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table table-bordered">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table table-hover table-striped table-bordered">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table table-dark table-hover">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Default</td>
-					<td>Defaultson</td>
-					<td>def@somemail.com</td>
-				</tr>      
-				<tr class="table-primary">
-					<td>Primary</td>
-					<td>Joe</td>
-					<td>joe@example.com</td>
-				</tr>
-				<tr class="table-success">
-					<td>Success</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr class="table-danger">
-					<td>Danger</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr class="table-info">
-					<td>Info</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-				<tr class="table-warning">
-					<td>Warning</td>
-					<td>Refs</td>
-					<td>bo@example.com</td>
-				</tr>
-				<tr class="table-active">
-					<td>Active</td>
-					<td>Activeson</td>
-					<td>act@example.com</td>
-				</tr>
-				<tr class="table-secondary">
-					<td>Secondary</td>
-					<td>Secondson</td>
-					<td>sec@example.com</td>
-				</tr>
-				<tr class="table-light">
-					<td>Light</td>
-					<td>Angie</td>
-					<td>angie@example.com</td>
-				</tr>
-				<tr class="table-dark text-dark">
-					<td>Dark</td>
-					<td>Bo</td>
-					<td>bo@example.com</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table class="table">
-			<thead class="thead-dark"><!-- thead-light -->
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-		</table>
+		<p>Image at the bottom (card-img-bottom):</p>
+		<div class="card" style="width:400px">
+			<div class="card-body">
+				<h4 class="card-title">Jane Doe</h4>
+				<p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+				<a href="#" class="btn btn-primary">See Profile</a>
+			</div>
+			<img class="card-img-bottom" src="../../images/iconfb.png" alt="Card image" style="width:100%">
+		</div>
+		<h2>Cards Columns</h2>
+		<p>The .card-columns class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
+		<p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+		<div class="card-columns">
+			<div class="card bg-primary">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the first card</p>
+				</div>
+			</div>
+			<div class="card bg-warning">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the second card</p>
+				</div>
+			</div>
+			<div class="card bg-success">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the third card</p>
+				</div>
+			</div>
+			<div class="card bg-danger">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the fourth card</p>
+				</div>
+			</div>  
+			<div class="card bg-light">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the fifth card</p>
+				</div>
+			</div>
+			<div class="card bg-info">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the sixth card</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
 
 
-		<!-- bs4 images -->
-		<img src="../../images/IMG_0.jpg" class="rounded" alt="Cinque Terre" width="304" height="335"> 
-		<img src="../../images/IMG_1.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="304">
-		<img src="../../images/IMG_3.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="335"> 
-		<img src="../../images/IMG_2.jpg" class="float-right" alt="Cinque Terre" width="304" height="335"> 
-	</body>
-	</html>
+
+	<!-- bs4 dropdown -->
+	<div class="container">
+		<h2>Dropdowns</h2>
+		<p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Link 1</a>
+				<a class="dropdown-item" href="#">Link 2</a>
+				<a class="dropdown-item" href="#">Link 3</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Another link</a>
+			</div>
+		</div>
+		<h2>Dropdowns</h2>
+		<p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<h5 class="dropdown-header">Dropdown header</h5>
+				<a class="dropdown-item" href="#">Link 1</a>
+				<a class="dropdown-item" href="#">Link 2</a>
+				<a class="dropdown-item" href="#">Link 3</a>
+				<h5 class="dropdown-header">Dropdown header</h5>
+				<a class="dropdown-item" href="#">Another link</a>
+			</div>
+		</div>
+		<h2>Dropdowns</h2>
+		<p>The .active class adds a blue background color to the active link.</p>
+		<p>The .disabled class disables a dropdown item (grey text color and a no-parking-sign on hover).</p>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Normal</a>
+				<a class="dropdown-item active" href="#">Active</a>
+				<a class="dropdown-item disabled" href="#">Disabled</a>
+			</div>
+		</div>
+		<div class="dropdown dropright">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropright button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Link 1</a>
+				<a class="dropdown-item" href="#">Link 2</a>
+				<a class="dropdown-item" href="#">Link 3</a>
+			</div>
+		</div>
+		<div class="dropdown dropleft float-right">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropleft button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Link 1</a>
+				<a class="dropdown-item" href="#">Link 2</a>
+				<a class="dropdown-item" href="#">Link 3</a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+
+
+
+	<!-- bs4 collapse -->
+	<div class="container">
+		<h2>Simple Collapsible</h2>
+		<p>Click on the button to toggle between showing and hiding content.</p>
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+		<div id="demo" class="collapse">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<br>
+
+		<h2>Accordion Example</h2>
+		<p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+					<a class="card-link" data-toggle="collapse" href="#collapseOne">
+						Collapsible Group Item #1
+					</a>
+				</div>
+				<div id="collapseOne" class="collapse show" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+						Collapsible Group Item #2
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+						Collapsible Group Item #3
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+
+
+
+
+	<!-- bs4 navs -->
+	<div class="container">
+		<h2>Navigation Pills</h2>
+		<p>Turn the nav menu into navigation pills with the .nav nav-pills class:</p>
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Active</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		</ul>
+		<br>
+		<h2>Justified Tabs/Pills</h2>
+		<p>To justify tabs/pills (equal width), use the .nav-justified class:</p>
+		<ul class="nav nav-pills nav-justified">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Active</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		</ul><br>
+		<h2>Pills with Dropdown</h2>
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Active</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+					<a class="dropdown-item" href="#">Link 3</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		</ul>
+		<h2>Toggleable Tabs</h2>
+		<br>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div id="home" class="container tab-pane active"><br>
+				<h3>HOME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div id="menu1" class="container tab-pane fade"><br>
+				<h3>Menu 1</h3>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="menu2" class="container tab-pane fade"><br>
+				<h3>Menu 2</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+			</div>
+		</div>
+		<h2>Toggleable Pills</h2>
+		<br>
+		<!-- Nav pills -->
+		<ul class="nav nav-pills" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+			</li>
+		</ul>
+
+	</div>
+	<br>
+	<br>
+	<br>
+
+
+
+	<!-- bs4 navbar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#">
+			<img src="../../images/IMG_4.jpg" alt="logo" style="width:40px;">
+		</a>
+
+		<!-- Links -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link 1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link 2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link 3</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">
+		<h3>Brand / Logo</h3>
+		<p>When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar.</p>
+	</div>
+	<br>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline" action="/action_page.php">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search">
+			<button class="btn btn-success" type="submit">Search</button>
+		</form>
+	</nav>
+	<br>
+
+	<div class="container">
+		<h3>Navbar Forms</h3>
+		<p>Use the .form-inline class to align form elements side by side inside the navbar.</p>
+	</div>
+
+</body>
+</html>
